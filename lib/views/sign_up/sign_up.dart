@@ -149,7 +149,7 @@ class SignUp extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: List.generate(
-                              lists.socialMediaIconList.length, (index) {
+                              lists.landingSocialMediaIconList.length, (index) {
                             return Container(
                               width: 70.5.w,
                               height: 48.h,
@@ -170,7 +170,7 @@ class SignUp extends StatelessWidget {
                               child: SvgPicture.asset(
                                 height: 18.h,
                                 width: 18.h,
-                                lists.socialMediaIconList[index],
+                                lists.landingSocialMediaIconList[index],
                                 fit: BoxFit.scaleDown,
                               ),
                             );

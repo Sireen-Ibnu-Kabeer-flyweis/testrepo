@@ -121,7 +121,9 @@ class _SignInState extends State<SignIn> {
               ),
               spacing.heightB(16.h),
               FilledButton(
-                onPressed: () {},
+                onPressed: () {
+                  GoRouter.of(context).goNamed(Routes.home.name);
+                },
                 child: Text("Log In"),
               ),
               spacing.heightB(16.h),
@@ -157,8 +159,8 @@ class _SignInState extends State<SignIn> {
               spacing.heightB(16.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:
-                    List.generate(lists.socialMediaIconList.length, (index) {
+                children: List.generate(lists.landingSocialMediaIconList.length,
+                    (index) {
                   return Container(
                     width: 70.5.w,
                     height: 48.h,
@@ -179,7 +181,7 @@ class _SignInState extends State<SignIn> {
                     child: SvgPicture.asset(
                       height: 18.h,
                       width: 18.h,
-                      lists.socialMediaIconList[index],
+                      lists.landingSocialMediaIconList[index],
                       fit: BoxFit.scaleDown,
                     ),
                   );

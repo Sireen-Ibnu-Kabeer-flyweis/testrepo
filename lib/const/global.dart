@@ -6,6 +6,7 @@ import 'package:stock_detector/const/app_fonts.dart';
 import 'package:stock_detector/const/app_lists.dart';
 import 'package:stock_detector/const/spacing.dart';
 import 'package:stock_detector/views/forgot_password/forgot_password.dart';
+import 'package:stock_detector/views/home/home.dart';
 import 'package:stock_detector/views/landing/landing.dart';
 import 'package:stock_detector/views/reset_password/reset_password.dart';
 import 'package:stock_detector/views/sign_in/sign_in.dart';
@@ -27,6 +28,7 @@ enum Routes {
   signup,
   forgotpassword,
   resetpassword,
+  home,
 }
 
 // Gorouter
@@ -65,6 +67,11 @@ GoRouter router = GoRouter(
       path: "/resetpassword",
       name: Routes.resetpassword.name,
       pageBuilder: (context, state) => animatedScreen(state, ResetPasswort()),
+    ),
+    GoRoute(
+      path: "/home",
+      name: Routes.home.name,
+      pageBuilder: (context, state) => animatedScreen(state, Home()),
     ),
   ],
 );

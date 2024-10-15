@@ -14,5 +14,5 @@ class Spacing {
     );
   }
 
-  EdgeInsets screenPadding = EdgeInsets.symmetric(horizontal: 22.w);
+  EdgeInsets screenPadding = EdgeInsets.symmetric(horizontal: 16.w);
 }
